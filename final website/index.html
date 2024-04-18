@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Games Sales Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Video Games Sales Analysis</h1>
+    </header>
+    <section id="introduction">
+        <h2>Overall Introduction</h2>
+        <p>Video games have long been a popular form of entertainment, and with the advent of game streaming, their sales are now influenced not only by their quality but also by their popularity in various regions. Understanding how video game sales vary across different regions is crucial in today's global gaming landscape, as it could help publishers develop games that are best suited to market preferences, targeting their customers more effectively. The main goal of our project is to explore this phenomenon to uncover the underlying factors shaping consumer preferences and purchasing behaviors.
+            To inform our research, we will draw upon insights from two reference papers:
+        <ul>
+            <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8858995/"> overview of the gaming industry across nations: using analytics with power BI to forecast and identify key influencers</a></li>
+            <li><a href="https://www.causeweb.org/usproc/sites/default/files/usclap/2017-2/Factors_that_Impact_Video_Game_Sales.pdf"> Factors that Impact Video Game Sales</a></li>
+        </ul>
+        <p>    Additionally, static images from Statista will be utilized to provide visual context to our findings, respectively. Through a careful examination of these resources,
+            our project aims to contribute valuable insights into the complex dynamics of video game sales.
+
+        </p>
+    </section>
+
+    <section id="data">
+    <h2>Introduction to the Data</h2>
+    <p>We collected our data from Kaggle's website. The data contains 11 fields, 5 categorical and 6 continuous, and has a data size of 16,598. The detail information about the features are listed in the following table:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Variable Name</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Name</td><td>the name of video games</td></tr>
+            <tr><td>Platform</td><td>the platform of the game's release</td></tr>
+            <tr><td>Year</td><td>Year of the game’s release</td></tr>
+            <tr><td>Genre</td><td>Genre of the game</td></tr>
+            <tr><td>Publisher</td><td>Publisher of the game</td></tr>
+            <tr><td>NA_sales</td><td>Sales in North America (millions)</td></tr>
+            <tr><td>EU_sales</td><td>Sales in Europe (millions)</td></tr>
+            <tr><td>JP_sales</td><td>Sales in Japan(millions)</td></tr>
+            <tr><td>Other_sales</td><td>Sales in the rest of the world</td></tr>
+            <tr><td>Global_sales</td><td>Total worldwide sales</td></tr>
+        </tbody>
+    </table>
+    <p>With this information about each video game, we will be able to answer our question, “How do regions affect the sales of video games,” by looking at the change in sales for factors such as publisher or platform, we might be able to figure out each region’s preference of video games.</p>
+</section>
+
+    <section id="graphs">
+        <h2>Graphs</h2>
+        <div id="graph1"></div>
+        <div id="graph2"><!-- Interactive graph here --></div>
+        <div id="graph3"><!-- D3 graph here --></div>
+        <script src="d3_main.js"></script>
+
+    </section>
+    <footer>
+        <p>Conclusion will go here.</p>
+    </footer>
+</body>
+</html>
