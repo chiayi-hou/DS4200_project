@@ -27,7 +27,8 @@
 
     <section id="data">
     <h2>Introduction to the Data</h2>
-    <p>We collected our data from Kaggle's website. The data contains 11 fields, 5 categorical and 6 continuous, and has a data size of 16,598. The detail information about the features are listed in the following table:</p>
+    <p>We collected our data from Kaggle's website. The data contains 11 fields, 5 categorical and 6 continuous,
+        and has a data size of 16,598. The detail information about the features are listed in the following table:</p>
     <table>
         <thead>
             <tr>
@@ -48,17 +49,47 @@
             <tr><td>Global_sales</td><td>Total worldwide sales</td></tr>
         </tbody>
     </table>
-    <p>With this information about each video game, we will be able to answer our question, “How do regions affect the sales of video games,” by looking at the change in sales for factors such as publisher or platform, we might be able to figure out each region’s preference of video games.</p>
-</section>
-
-    <section id="graphs">
-        <h2>Graphs</h2>
-        <div id="graph1"></div>
-        <div id="graph2"><!-- Interactive graph here --></div>
-        <div id="graph3"><!-- D3 graph here --></div>
-        <script src="d3_main.js"></script>
-
+    <p>With this information about each video game, we will be able to answer our question, “How do regions affect the sales of video games,”
+        by looking at the change in sales for factors such as publisher or platform, we might
+        be able to figure out each region’s preference of video games.</p>
     </section>
+
+    <section id="static1">
+        <h2>Top 15 Publishers by Global Sales</h2>
+
+        <div class="container">
+            <div class="image">
+                <iframe src="d3.html" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+            <div class="text">
+                <p> This chart shows the top10 publishers by global sales. Nintendo's sales after 2000 are far more than all other publishers,
+                showing its market leadership. Electronic Art and Activision surpassed Sony Computer Entertainment after 2000. In general,
+                the game market is expanding after 2000, all of them have noticeable progress changes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="static2">
+        <h3>Sales Vs Genre</h3>
+
+        <div class="container">
+            <div class="image">
+            <img src="sales vs genre.png" alt="Sales vs Genre" style="width:100%; height:auto; max-height:600px;">
+            </div>
+            <div class="text">
+                <p> This set of charts shows video game sales data for different regions (North America, Europe, Japan, and Other), sorted by game genre.
+                    Each chart uses a different color for each region.
+                    The x-axis of the bars represents sales (in millions of dollars) and the vertical axis represents the different game
+                    genres. In North America, ACTION games have the highest sales and STRATEGY games have the lowest sales. The European market is closer to the
+                    North American market in terms of game genre preference. In Japan, Role-Playing (RPG) games dominate the Japanese market, with a significant
+                    difference in preference from other regions. Among the other regions, strategy sales are the lowest, following the same trend as the other
+                    regions. Overall, in the global market, ACTION and SPORT sell well, and STRATEGY, PUZZLE, and ADVENTURE sell less well.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>Conclusion will go here.</p>
     </footer>

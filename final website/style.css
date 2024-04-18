@@ -69,3 +69,49 @@ th, td {
 #introduction p{
     color: #666;
 }
+
+.container {
+    display: flex;
+    padding: 30px;
+}
+
+.image {
+    flex: 5;
+    border: 3px solid #ccc;
+}
+
+.text {
+    flex: 4;
+    font-size: 18px;
+    color: #666;
+    line-height: 2;
+    padding-left: 100px;
+    margin-right: auto;
+    max-width = 40%;
+}
+
+#static1 {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+#static1 h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#static2 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+#static2 h3 {
+    color: #333;
+    margin-bottom: 10px;
+}

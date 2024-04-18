@@ -1,6 +1,6 @@
 // Define the dimensions and margins of the graph
-const margin = { top: 100, right: 100, bottom: 100, left: 300 },
-      width = 1000,
+const margin = { top: 100, right: 50, bottom: 100, left: 300 },
+      width = 600,
       height = 800 - margin.top - margin.bottom;
 
 // Define the colors for the pre and post 2000 sales
@@ -10,8 +10,7 @@ const colors = {
 };
 
 // Append the SVG object to the body of the page
-const svg = d3.select("#graph1")
-    .append("svg")
+const svg = d3.select("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -44,7 +43,7 @@ d3.csv("vgsales.csv").then(function(data) {
   }));
 
   // Sort publishers by total sales and slice the top 10
-  const topPublishers = publishers.sort((a, b) => b.total_sales - a.total_sales).slice(0, 15);
+  const topPublishers = publishers.sort((a, b) => b.total_sales - a.total_sales).slice(0, 10);
 
 // Add X axis
 const x = d3.scaleLinear()
