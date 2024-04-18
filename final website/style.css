@@ -67,27 +67,27 @@ th, td {
 }
 
 #data_histogram {
-    display: flex; /* Use Flexbox layout */
+    display: flex;
 }
 #data_histogram img {
     flex: 5;
-    max-width: 50%; /* Set maximum width for the image */
-    margin-right: 20px; /* Add some space between the image and paragraph */
+    max-width: 50%;
+    margin-right: 20px;
 }
 #histogram_explanation {
-    flex: 4; /* Take up remaining space */
+    flex: 4;
 }
 
 #sankey_container {
-    display: flex; /* Use Flexbox layout */
+    display: flex;
 }
 #sankey_container img {
     flex: 5;
-    max-width: 50%; /* Set maximum width for the image */
-    margin-right: 20px; /* Add some space between the image and paragraph */
+    max-width: 50%;
+    margin-right: 20px;
 }
 #sankey_analysis {
-    flex: 4; /* Take up remaining space */
+    flex: 4;
 }
 
 
@@ -146,3 +146,9 @@ th, td {
     color: #333;
     margin-bottom: 10px;
 }
+
+#data_histogram {
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+
