@@ -49,9 +49,43 @@
             <tr><td>Global_sales</td><td>Total worldwide sales</td></tr>
         </tbody>
     </table>
-    <p>With this information about each video game, we will be able to answer our question, “How do regions affect the sales of video games,”
-        by looking at the change in sales for factors such as publisher or platform, we might
-        be able to figure out each region’s preference of video games.</p>
+
+        <div id="data_histogram" >
+            <img src="plots/histogram_game_count_by_year.png" alt="Histogram of Games by Year" >
+            <p id="histogram_explaination">
+                This is a histogram for the video game count for each year. From the visualization, you can notice that the data collection for video
+                games started decreasing since 2011 and the count came to 0 at around 2016, which shows this dataset is less precise for the recent years.
+                Therefore, it is important for us to pay attention on the change on total sales for recent years. Still, since we are focusing our research 
+                on "how sales differ by region," this dataset could still be helpful for us to understnad each region's preferences on video games.
+            </p>
+
+        </div>
+
+        <p> With this information about each video game, we will be able to answer our question, “How do regions affect the sales of video games,”
+            by looking at the change in sales for factors such as publisher or platform, we might
+            be able to figure out each region’s preference of video games.
+        </p>
+    </section>
+
+    <section id="interactive_stacked_bar">
+        <h2>Total Video Game Sales by Region in Each Year</h2>
+
+        <iframe id="stacked_bar" src="plots/combined_chart.html" width="100%" height="500px" frameborder="0"></iframe>
+        <p id="stacked_bar_analysis" class="fullpage_text">
+            The visualization is an interactive stacked bar chart that is colored the bars by the video game sales in each 
+            region, where blue represents Europe, red represents Japan, green represents North America, and gray represents 
+            sales from other regions. By choosing the year by the slider below, the bar chart by the side will show the bar chart 
+            of video game sales by region for the selected year.
+        </p>
+        <p class="fullpage_text">
+            First, the bar chart shows that video game sales started to grow substantially in 1996, and were the highest in 2008; 
+            after then, they continued to decrease since then. We can also notice that sales in North America mostly accounted for the 
+            largest portion of total sales, except for 1993 to 1995. Secondly, by changing the year for the pie chart, we can notice that 
+            sales in Japan started to grow and take an important place in video game sales since 1983, where JP_Sales grew from zero 
+            (too low to be included separately; might be included in Other_Sales) to about the half of the total sale. 
+            Also, we can notice that video game sales in Japan were always higher than the ones in Europe before 1995, 
+            while the sales in Europe started to grow and become the second largest market since 2001.
+        </p>
     </section>
 
     <section id="static1">
@@ -70,12 +104,35 @@
         </div>
     </section>
 
+    <section id="sankey">
+        <h2>Sankey Diagram for Top 50 Publisher</h2>
+        
+        <div id="sankey_container">
+            <img src="plots/sankey.png" alt="Top 50 Publishers to Region">
+            <p class="text" id="sankey_analysis">
+                The figure at the side is a Sankey diagram for the top 50 publishers vs. the three regions. With this visualization, we can 
+                take a look at whether each region has its preference for the video game publisher. First, you can notice that the visualization 
+                is arranged so that the publishers at the upper are more preferred by North America and less preferred by Japan while the ones 
+                at the lower position are more preferred by Japan. The plot also shows the top 5 publishers during the period were Nintendo,
+                 Electronic Arts, Activision, Sony Computer Entertainment, and Ubisoft. Among these 5 publishers, you can notice that publishers
+                  from Western countries like Activision (California), Electronic Arts (California), and Ubisoft (France) are only preferred by 
+                  North America and Europe, whereas publishers from Japan like Nintendo and Sony Computer Entertainment are preferred by all three 
+                  of them. From this, we might be able to speculate that Japan has a preference for its domestic games, while North America and 
+                  Europe have less preference for the region of the publisher.
+
+            </p>
+
+        </div>
+
+
+    </section>
+
     <section id="static2">
         <h3>Sales Vs Genre</h3>
 
         <div class="container">
             <div class="image">
-            <img src="sales vs genre.png" alt="Sales vs Genre" style="width:100%; height:auto; max-height:600px;">
+            <img src="plots/sales vs genre.png" alt="Sales vs Genre" style="width:100%; height:auto; max-height:600px;">
             </div>
             <div class="text">
                 <p> This set of charts shows video game sales data for different regions (North America, Europe, Japan, and Other), sorted by game genre.
@@ -90,8 +147,18 @@
         </div>
     </section>
 
-    <footer>
-        <p>Conclusion will go here.</p>
-    </footer>
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p class="fullpage_text">
+            From the six visualizations, we learned that first, North America has been the biggest market for almost all kinds of games over time. 
+            Also, we noticed that North America and Europe almost have the same preference for games. For example, the ranking for each genre for North America and 
+            Europe are exactly the same and they both similar preference of the video game publishers. On the other hand, Japan's preference is way more different 
+            where they are passionate about Role-Playing games and preferred their own video game publishers more. With this information, we can answer our research 
+            question that region does affect a lot on the video games sales because of the preferences of game genres and publishers; still, the difference is not
+            significant for neighboring regions (like North America and Europe) possibly because of the similar culture background. 
+        </p>
+    </section>
+
+
 </body>
 </html>
