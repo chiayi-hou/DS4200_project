@@ -35,10 +35,7 @@ th, td {
     margin-bottom: 20px;
 }
 
-#data h2 {
-    color: #320;
-    margin-bottom: 10px;
-}
+
 
 #data p {
     color: #666;
@@ -69,6 +66,7 @@ th, td {
 #data_histogram {
     display: flex;
 }
+
 #data_histogram img {
     flex: 5;
     max-width: 50%;
@@ -81,11 +79,13 @@ th, td {
 #sankey_container {
     display: flex;
 }
+
 #sankey_container img {
     flex: 5;
     max-width: 50%;
     margin-right: 20px;
 }
+
 #sankey_analysis {
     flex: 4;
 }
@@ -119,7 +119,6 @@ th, td {
     color: #666;
 }
 
-
 #static1 h2 {
     color: #333;
     margin-bottom: 10px;
@@ -132,6 +131,7 @@ th, td {
     margin: 20px;
     padding: 20px;
 }
+
 #static2 {
     background-color: #f9f9f9;
     padding: 20px;
@@ -163,6 +163,7 @@ th, td {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
+
 #interactive_stacked_bar {
     background-color: #f9f9f9;
     padding: 20px;
