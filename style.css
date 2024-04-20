@@ -35,10 +35,7 @@ th, td {
     margin-bottom: 20px;
 }
 
-#data h2 {
-    color: #320;
-    margin-bottom: 10px;
-}
+
 
 #data p {
     color: #666;
@@ -69,6 +66,7 @@ th, td {
 #data_histogram {
     display: flex;
 }
+
 #data_histogram img {
     flex: 5;
     max-width: 50%;
@@ -81,11 +79,13 @@ th, td {
 #sankey_container {
     display: flex;
 }
+
 #sankey_container img {
     flex: 5;
     max-width: 50%;
     margin-right: 20px;
 }
+
 #sankey_analysis {
     flex: 4;
 }
@@ -119,20 +119,12 @@ th, td {
     color: #666;
 }
 
-#static1 {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 20px;
-    padding: 20px;
-}
-
 #static1 h2 {
     color: #333;
     margin-bottom: 10px;
 }
 
-#static2 {
+#interactive_line_chart {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -140,13 +132,58 @@ th, td {
     padding: 20px;
 }
 
+#static2 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
 #static2 h3 {
     color: #333;
-    margin-bottom: 10px;
 }
 
 #data_histogram {
-    margin-top: 40px; /* Adjust the value as needed */
+    margin-top: 40px;
 }
 
+#density_sales {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
 
+#sankey {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#interactive_stacked_bar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#static1 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#conclusion {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
